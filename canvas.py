@@ -138,7 +138,7 @@ class Canvas(ctk.CTkCanvas):
             del lastShapes[-1]
 
     def reset(self, canvas):
-        question = CTkMessagebox(width = 200, title = "Reset Canvas", message = "Are you sure you want to reset the canvas?", icon = "question", option_1 = "Yes", option_2 = "No")
+        question = CTkMessagebox(width = 100, title = "Reset Canvas", message = "Are you sure you want to reset the canvas?", icon = "question", option_1 = "Yes", option_2 = "No")
         response = question.get()
 
         if response == "Yes":
